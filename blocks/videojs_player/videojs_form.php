@@ -56,12 +56,12 @@ defined('C5_EXECUTE') or die(_("Access Denied."));
 <div class="ccm-block-field-group">
 	<h2><?php  echo t('Maximum Dimensions') ?></h2>
 	<table border="0" cellspacing="0" cellpadding="0">
-		<tr><td colspan="4"><?php  echo t('Input the maximum width and height in pixels:') ?></td></tr>
+		<tr><td colspan="4"><?php  echo t('Input the maximum width and height in pixels or percentages(must append %, otherwise defaults to pixel):') ?></td></tr>
 		<tr>
 			<td><?php  echo t('Width')?></td>
-			<td><?php  echo  $form->text('width', intval($width), array('style' => 'width: 40px')); ?></td>
+			<td><?php  echo  $form->text('width', $width, array('style' => 'width: 40px')); ?></td>
 			<td><?php  echo t('Height')?></td>
-			<td><?php  echo  $form->text('height', intval($height), array('style' => 'width: 40px')); ?></td>
+			<td><?php  echo  $form->text('height', $height, array('style' => 'width: 40px')); ?></td>
 		</tr>
 	</table>
 </div>
